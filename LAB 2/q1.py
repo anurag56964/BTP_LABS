@@ -6,7 +6,6 @@
 
 # ///////////////////////////////////////////////
 
-
 def if_prime(num):
   """Check If Its A Prime Num"""
   if num <= 1:
@@ -16,10 +15,10 @@ def if_prime(num):
       return False;
   return True
 
-def get_primeNum(n):
+def getPrimeNumbers(n):
   """Return List Of Prime Num Between 2 & n"""
   return [num for num in range(2, n+1) if if_prime(num)]
 
 n = input("Please Enter The Last Number Of Range = ")
 n = int(n)
-print(f"Prime Number In The Range 2 - {n}: ", get_primeNum(n))
+print(f"Prime Number In The Range 2 - {n}: ", getPrimeNumbers(n))
