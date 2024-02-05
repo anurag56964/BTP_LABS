@@ -8,11 +8,11 @@
 
 import matplotlib.pyplot as plt
 
-def graphSnowfall(filePath):
+def graphSnowfall(t):
   
   # Read and Save Data from txt
   snowfall_amount = []
-  with open(filePath, 'r') as txtFile:
+  with open(t, 'r') as txtFile:
     for line in txtFile:
       try:
         # converting each line(numbers) to float numbers
