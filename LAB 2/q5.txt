@@ -1,0 +1,13 @@
+In the first method, a function called doubleL(n) is introduced. It accepts an integer n as input and outputs a list of the first n even numbers, beginning at 0. This is accomplished by initializing an empty list, 
+multiplying the index i by 2, and then iterating n times using a loop to fill the list with even integers. Colon(:) is used as a separator between the numbers in the function's output when it is invoked with the input 5.
+
+The second method makes things easier by using list comprehension to generate a list of the first five even numbers right away. To accomplish this, multiply every n in the range of 0 to 4 by 2. As in the first method, 
+the result is displayed iteratively across the list, separated by colons.
+
+The generator doubleG(n), defined by the third method, produces the first n even numbers in a consecutive fashion. In contrast to the first method, which returns the entire list 
+at once, this function generates each number as iteratively by using the yield keyword. When n=5 is used to execute this method, even integers are produced and printed with colons serving as separators.
+
+
+Rather of producing a single result or a completely prepared list, the doubleG(n) function is a generator function since it uses the yield keyword to construct a sequence of values over time. Using a generator function such as doubleG(n) has the benefit of being efficient, especially when it comes to memory utilization. It does not require storing the complete sequence in memory before the iteration starts because it generates each value one at a time and only when necessary. When working with lengthy sequences, this is especially helpful because it allows for a significant reduction in memory use when compared to storing the entire list of values at once.
+
+
